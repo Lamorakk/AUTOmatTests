@@ -1,0 +1,12 @@
+{
+  "name": "automat-tests",
+  "version": "1.0.0",
+  "description": "Automated testing labs — run tests from repo root",
+  "private": true,
+  "workspaces": [
+    "lab3"
+  ],
+  "scripts": {
+    "test": "npm test -w lab3"
+  }
+}

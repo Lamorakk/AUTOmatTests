@@ -1,0 +1,14 @@
+{
+  "name": "lab3-variant5",
+  "version": "1.0.0",
+  "description": "Lab 3 — variant 5: round, trunc, random (automated tests)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.5"
+  }
+}
