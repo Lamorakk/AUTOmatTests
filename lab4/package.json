@@ -1,0 +1,21 @@
+{
+  "name": "lab4-openweather-http",
+  "version": "1.0.0",
+  "description": "Lab 4 — HTTP client (axios), OpenWeatherMap GET, local REST for POST/PUT/DELETE",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "task1:get": "node scripts/task1SimpleGet.mjs"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "express": "^4.21.2",
+    "supertest": "^7.0.0",
+    "vitest": "^3.0.5"
+  }
+}

@@ -4,9 +4,12 @@
   "description": "Automated testing labs — run tests from repo root",
   "private": true,
   "workspaces": [
-    "lab3"
+    "lab3",
+    "lab4"
   ],
   "scripts": {
-    "test": "npm test -w lab3"
+    "test": "npm test -w lab3 -w lab4",
+    "test:lab3": "npm test -w lab3",
+    "test:lab4": "npm test -w lab4"
   }
 }
