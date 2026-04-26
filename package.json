@@ -5,11 +5,13 @@
   "private": true,
   "workspaces": [
     "lab3",
-    "lab4"
+    "lab4",
+    "lab5"
   ],
   "scripts": {
-    "test": "npm test -w lab3 -w lab4",
+    "test": "npm test -w lab3 -w lab4 -w lab5",
     "test:lab3": "npm test -w lab3",
-    "test:lab4": "npm test -w lab4"
+    "test:lab4": "npm test -w lab4",
+    "test:lab5": "npm test -w lab5"
   }
 }

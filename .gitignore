@@ -17,6 +17,12 @@ pnpm-debug.log*
 # Vitest / coverage
 coverage/
 
+# Playwright
+playwright-report/
+test-results/
+blob-report/
+.playwright/
+
 # Environment (keep secrets out of git)
 .env
 .env.local
