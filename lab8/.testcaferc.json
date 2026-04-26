@@ -1,0 +1,5 @@
+{
+  "pageRequestTimeout": 120000,
+  "selectorTimeout": 30000,
+  "browserInitTimeout": 300000
+}

@@ -8,7 +8,8 @@
     "lab4",
     "lab5",
     "lab6",
-    "lab7"
+    "lab7",
+    "lab8"
   ],
   "scripts": {
     "test": "npm test -w lab3 -w lab4 -w lab5 -w lab6 -w lab7",
@@ -20,6 +21,12 @@
     "test:lab7:e2e": "npm run test:e2e -w lab7",
     "test:lab7:ui": "npm run test:unit:ui -w lab7",
     "test:lab7:e2e:ui": "npm run test:e2e:ui -w lab7",
-    "test:lab7:e2e:report": "npm run test:e2e:report -w lab7"
+    "test:lab7:e2e:report": "npm run test:e2e:report -w lab7",
+    "test:lab8": "npm test -w lab8",
+    "test:testcafe": "npm run test:testcafe -w lab8",
+    "test:testcafe:headed": "npm run test:testcafe:headed -w lab8",
+    "test:lab8:testcafe": "npm run test:testcafe -w lab8",
+    "test:lab8:testcafe:headed": "npm run test:testcafe:headed -w lab8",
+    "test:lab8:wdio": "npm run test:wdio -w lab8"
   }
 }

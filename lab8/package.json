@@ -1,0 +1,22 @@
+{
+  "name": "lab8-testcafe-wdio",
+  "version": "1.0.0",
+  "description": "Lab 8 — TestCafe vs WebdriverIO (variant): comparison + 3 UI tests each",
+  "private": true,
+  "scripts": {
+    "test:testcafe": "testcafe --hostname 127.0.0.1 chrome:headless -c 1 testcafe/tests/todomvc-ui.test.cjs",
+    "test:testcafe:headed": "testcafe --hostname 127.0.0.1 chrome -c 1 testcafe/tests/todomvc-ui.test.cjs",
+    "test:testcafe:edge": "testcafe --hostname 127.0.0.1 edge:headless -c 1 testcafe/tests/todomvc-ui.test.cjs",
+    "test:wdio": "wdio run webdriverio/wdio.conf.cjs",
+    "test": "npm run test:testcafe ; npm run test:wdio"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^9.4.1",
+    "@wdio/globals": "^9.4.1",
+    "@wdio/local-runner": "^9.4.1",
+    "@wdio/mocha-framework": "^9.4.1",
+    "@wdio/spec-reporter": "^9.4.1",
+    "testcafe": "^3.7.1",
+    "webdriverio": "^9.4.1"
+  }
+}
