@@ -10,10 +10,14 @@
     "lab7"
   ],
   "scripts": {
-    "test": "npm test -w lab3 -w lab4 -w lab5",
+    "test": "npm test -w lab3 -w lab4 -w lab5 -w lab7",
     "test:lab3": "npm test -w lab3",
     "test:lab4": "npm test -w lab4",
     "test:lab5": "npm test -w lab5",
-    "test:lab7": "npm test -w lab7"
+    "test:lab7": "npm test -w lab7",
+    "test:lab7:e2e": "npm run test:e2e -w lab7",
+    "test:lab7:ui": "npm run test:unit:ui -w lab7",
+    "test:lab7:e2e:ui": "npm run test:e2e:ui -w lab7",
+    "test:lab7:e2e:report": "npm run test:e2e:report -w lab7"
   }
 }

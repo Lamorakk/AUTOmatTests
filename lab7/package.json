@@ -1,15 +1,23 @@
 {
-  "name": "lab7-load-testing",
+  "name": "lab7-unified-automation",
   "version": "1.0.0",
-  "description": "Lab 7 — HTTP load / performance smoke (autocannon)",
+  "description": "Lab 7 — unified project: unit + API + E2E (reuses lab3/lab4 code)",
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test tests/validateLoadResults.test.js",
-    "test:load": "node scripts/runLoadSmoke.mjs",
-    "verify": "npm test ; npm run test:load"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:unit:ui": "vitest --ui",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:report": "playwright show-report",
+    "test:all": "vitest run ; playwright test"
   },
-  "dependencies": {
-    "autocannon": "^8.0.0"
+  "devDependencies": {
+    "@playwright/test": "^1.50.1",
+    "@vitest/ui": "^3.0.5",
+    "express": "^4.21.2",
+    "supertest": "^7.0.0",
+    "vitest": "^3.0.5"
   }
 }
