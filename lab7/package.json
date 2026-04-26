@@ -1,0 +1,15 @@
+{
+  "name": "lab7-load-testing",
+  "version": "1.0.0",
+  "description": "Lab 7 — HTTP load / performance smoke (autocannon)",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/validateLoadResults.test.js",
+    "test:load": "node scripts/runLoadSmoke.mjs",
+    "verify": "npm test ; npm run test:load"
+  },
+  "dependencies": {
+    "autocannon": "^8.0.0"
+  }
+}

@@ -1,0 +1,32 @@
+# Lab 7 — optional load smoke (manual only; uses public internet API)
+name: "Lab 7 — load smoke"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  load-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run lab7 unit tests
+        run: npm run test:lab7
+
+      - name: Run lab7 load smoke (JSONPlaceholder)
+        run: npm run test:load -w lab7
+        env:
+          LOAD_DURATION_SEC: "5"
+          LOAD_CONNECTIONS: "5"
+          LOAD_MIN_2XX: "15"
